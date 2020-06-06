@@ -1,0 +1,24 @@
+DATA TestScores;
+INPUT TScore_before TScore_after@@;
+DATALINES;
+123 133   135 136   129 135   117 137
+120 142   138 135   140 121   145 147
+136 168   140 152   146 129   137 145
+;
+RUN;
+
+
+PROC PRINT DATA=TestScores;
+
+RUN;
+
+ODS GRAPHICS ON;
+
+PROC TTEST;
+
+PAIRED TScore_before*TScore_after;
+
+RUN;
+
+ODS GRAPHICS OFF;
+
