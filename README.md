@@ -1,2 +1,2 @@
 # hello-world
-MIS500 SAS Hypothesis Testing 
+MIS500 Foundations of Data Analytics
